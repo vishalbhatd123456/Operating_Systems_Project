@@ -1,0 +1,18 @@
+//A simple criterion to prevent the deadlock condition
+#include<stdio.h>
+int Calc_Resources(int Process, int Needs)
+{
+	int Calculate = 0;
+	Calculate = (Process)*(Needs-1) + 1;
+	return Calculate;
+}
+void main()
+{
+	int process, need, res;
+	printf("Enter the nunmber of process in the multiprogramming sysytem");
+	scanf("%d",&process);
+	printf("ENter the need of the process:");
+	scanf("%d",&need);
+	res = Calc_Resources(process,need);
+	printf("The minimum number of resource to avoid deadlock is %d",res)
+}
