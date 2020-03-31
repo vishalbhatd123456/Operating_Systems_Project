@@ -1,0 +1,13 @@
+ALGORTIHM FOR FIRST COME FIRST SERVER:
+{
+	total = 0
+	1. Take the user input of the arrival time and the burst time of processes 
+	2. Arrange the arrival time of the process in increasing order of their values starting from 0.
+	3.if (two or more processes have same arrival time)
+		Consider the process that arrives at the earliest into the system
+	4. while(there are no process left to arrive)
+		do	
+			total = total + busrt_time
+			plot the gantt chart 
+		end while
+}
